@@ -39,7 +39,9 @@ module.exports = {
       config: resolve('config'),
     },
     fallback: {
-      crypto: false, // 针对crypto-js处理
+      http: require.resolve("stream-http"),
+      buffer: require.resolve("buffer"),
+      timers: require.resolve("timers-browserify")
     },
   },
   module: {
