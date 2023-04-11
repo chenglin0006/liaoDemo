@@ -1,0 +1,20 @@
+# dependencies
+**/node_modules
+
+# production
+public/app.*.css
+public/scripts
+public/img
+public/index.html
+public/*.js
+public/*.css
+public/*.txt
+public/*.map
+
+# misc
+.DS_Store
+npm-debug.log
+yarn-error.log
+.vscode
+.idea
+.history

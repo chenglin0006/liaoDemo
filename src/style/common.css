@@ -1,0 +1,25 @@
+#app,
+body,
+html {
+  height: 100%;
+  width: 100%;
+  font-family: '微软雅黑', BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Helvetica Neue',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
+}
+
+.g-no-m {
+  margin: 0 !important;
+}
+
+.g-no-p {
+  padding: 0 !important;
+}
+
+@font-face {
+  font-family: AlibabaSans102-Bold;
+  src: url('https://res1.bnq.com.cn/5b58a317-d3e2-4a32-847d-85892a391b30?t=1625820584521'),
+    url('https://res1.bnq.com.cn/866f18d9-5244-412c-b20d-fd07f50518ec?t=1625821236949');
+}
+.numDiv .num {
+  font-family: AlibabaSans102-Bold;
+}

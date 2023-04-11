@@ -1,0 +1,179 @@
+@import '~antd/lib/style/themes/default.less';
+
+.ant-menu-item .ant-menu-item-icon + span,
+.ant-menu-submenu-title .ant-menu-item-icon + span,
+.ant-menu-item .anticon + span,
+.ant-menu-submenu-title .anticon + span {
+  margin-left: 0 !important;
+}
+
+.todocenter-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+
+  .right-layout {
+    padding-left: 0px;
+    background: rgb(238, 238, 238);
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    &:has(.duty-form) {
+      background: rgb(240, 242, 245) !important;
+    }
+  }
+
+  .fomCont {
+    position: relative;
+    // padding: 24px;
+    margin: 0px;
+    background: rgb(238, 238, 238);
+    // min-height: auto;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    &.show-padding {
+      padding: 24px;
+    }
+    &.changeBgc {
+      background: #ffffff;
+      padding: 0;
+    }
+    &:has(.duty-form) {
+      background: rgb(240, 242, 245) !important;
+    }
+  }
+
+  .todocenter-form-horizontal .todocenter-form-item-control {
+    overflow: hidden;
+  }
+
+  .search-div .ant-card-body {
+    padding: 10px 10px 10px 10px;
+  }
+
+  .logoContainer {
+    position: relative;
+    height: 64px;
+    padding-left: 24px;
+    overflow: hidden;
+    line-height: 64px;
+    transition: all 0.3s;
+    background-color: #001529;
+
+    .logo {
+      display: inline-block;
+      width: 70px;
+      vertical-align: middle;
+      margin-right: 8px;
+      border-radius: 5px;
+    }
+    .pro-name {
+      font-family: PingFangSC-Semibold;
+      font-size: 18px;
+      color: #ffffff;
+      font-weight: 600;
+    }
+  }
+
+  .hide {
+    display: none;
+  }
+  .bnq-global-header {
+    background: #fff;
+    padding: 0;
+    height: 42px;
+    line-height: 42px;
+    position: relative;
+    box-shadow: 0 1px 4px rgba(0, 21, 41, 0.08);
+    z-index: 9;
+    // position: fixed;
+    // left: 208px;
+    // right: 0;
+    // top: 0;
+    transition: all 0.2s;
+
+    .bnq-global-header-trigger {
+      height: 48px;
+      padding: 13px 21px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: all 0.3s, padding 0s;
+
+      &:hover {
+        background: rgba(0, 0, 0, 0.025);
+      }
+    }
+
+    .bnq-global-header-right {
+      float: right;
+      height: 100%;
+      font-size: 16px;
+      overflow: hidden;
+
+      .bnq-global-header-action {
+        display: inline-block;
+        height: 100%;
+        padding: 0 20px;
+        cursor: pointer;
+        color: rgba(0, 0, 0, 0.65);
+        transition: all 0.3s;
+        font-size: 14px;
+
+        &:hover {
+          background: rgba(0, 0, 0, 0.025);
+        }
+
+        > i {
+          color: rgba(0, 0, 0, 0.65);
+          vertical-align: middle;
+        }
+
+        .bnq-global-header-message-badge {
+          font-size: 14px;
+        }
+
+        .bnq-global-header-flag {
+          margin: calc((42px - 24px) / 2) 0;
+          vertical-align: top;
+        }
+
+        .bnq-global-header-avatar {
+          margin: calc((42px - 24px) / 2) 0;
+          margin-right: 8px;
+          vertical-align: top;
+          // color: #1890FF;
+          // background: rgba(255, 255, 255, 0.85);
+        }
+      }
+    }
+  }
+}
+
+.todocenter-form-item {
+  margin-bottom: 10px !important;
+}
+
+.task-status-span {
+  &.completed {
+    color: green;
+  }
+
+  &.overdue {
+    color: red;
+  }
+}
+
+.system-name-div {
+  font-size: 16px;
+  font-weight: 500;
+  margin: 10px 0;
+  padding-left: 20px;
+}
+
+.todocenter-layout {
+  -webkit-font-smoothing: auto !important;
+}
